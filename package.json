@@ -10,7 +10,7 @@
     "prepublish": "yarn clean && yarn build:library",
     "clean": "rimraf ./dist ./es ./coverage",
     "build:lib": "rollup --config",
-    "build": "yarn build:library && yarn storybook:build",
+    "build": "yarn build:lib && yarn storybook:build",
     "watch": "rollup --config --watch",
     "lint": "eslint src",
     "lint:ts": "eslint src --ext js,jsx,ts,tsx",
