@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 
 import { Icon, Token } from './components'
+import './styles/index.scss'
 
 export const Main = memo(() => (
   <>
@@ -8,3 +9,5 @@ export const Main = memo(() => (
     <Token />
   </>
 ))
+
+export { Icon, Token } from './components'
