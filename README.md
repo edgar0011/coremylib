@@ -16,17 +16,9 @@ node, npm or yarn
 
 ```
 npm install (yarn)
-
-npm run dev2 (yarn dev2, development FE, watchable, hot reload)
-npm run start:dev (yarn start:dev, development of BE)
 ```
 
-- development Storybook
-```
-npm run dev:storybook (yarn dev:storybook)
-```
-
- - build
+- build
 
 ```
 npm run build:lib (yarn build:lib)
