@@ -4,13 +4,10 @@ import commonjsPlugin from 'rollup-plugin-commonjs'
 import rebasePlugin from 'rollup-plugin-rebase'
 import jsonPlugin from 'rollup-plugin-json'
 import scss from 'rollup-plugin-scss'
-import sass from 'rollup-plugin-sass'
-import bundleScss from 'rollup-plugin-bundle-scss'
-import postcss from 'rollup-plugin-postcss'
 
 import pkg from './package.json'
 
-const extensions = ['.js', '.jsx', '.ts', '.tsx', '.scss']
+const extensions = ['.js', '.jsx', '.ts', '.tsx']
 
 export default {
   input: 'src/index.js',
@@ -27,15 +24,13 @@ export default {
     },
   ],
   plugins: [
-    // postcss({
-    //   extract: true,
-    //   modules: true,
-    //   use: ['scss'],
-    // }),
     scss({
       output: './dist/bundle.css',
     }),
-    // rebasePlugin({ verbose: true }),
+    // rebasePlugin({
+    //   verbose: true,
+    //   exclude: 'src/**/*.scss',
+    // }),
     resolvePlugin({
       extensions,
     }),

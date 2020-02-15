@@ -1,11 +1,14 @@
 {
-  "name": "@coreapp/lib",
+  "name": "core-my-lib",
   "version": "1.0.0",
   "description": "",
   "main": "dist/lib/index.js",
   "module": "es/index.js",
   "sideEffects": true,
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edgar0011/coremylib"
+  },
   "scripts": {
     "prepublish": "yarn clean && yarn build:lib",
     "clean": "rimraf ./dist ./es ./coverage",
@@ -75,17 +78,15 @@
     "react-test-renderer": "15.6.1",
     "rollup": "^1.31.1",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-bundle-scss": "^0.1.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-postcss": "^2.0.6",
     "rollup-plugin-rebase": "^3.2.3",
-    "rollup-plugin-sass": "^1.2.2",
     "rollup-plugin-scss": "^2.1.0",
     "typescript": "^3.5.3"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-collapse": "^4.0.3",
