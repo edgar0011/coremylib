@@ -28,8 +28,8 @@ export default {
       output: './dist/bundle.css',
     }),
     // rebasePlugin({
+    //   exclude: '*.scss',
     //   verbose: true,
-    //   exclude: 'src/**/*.scss',
     // }),
     resolvePlugin({
       extensions,
