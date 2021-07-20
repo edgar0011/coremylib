@@ -6,3 +6,5 @@ export const Icon = memo(() => (
     <p>Hello this is dummy component</p>
   </div>
 ))
+
+Icon.displayName = 'Icon'

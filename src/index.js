@@ -10,4 +10,6 @@ export const Main = memo(() => (
   </>
 ))
 
+Main.displayName = 'Main'
+
 export { Icon, Token } from './components'

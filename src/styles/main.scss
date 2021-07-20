@@ -15,3 +15,8 @@ body {
   @include innerBody;
   font: 100% $font-stack;
 }
+
+
+.token {
+  background-color: #EFEFEF;
+}
