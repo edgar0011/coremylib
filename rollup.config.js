@@ -1,7 +1,6 @@
 import babelPlugin from 'rollup-plugin-babel'
 import resolvePlugin from 'rollup-plugin-node-resolve'
 import commonjsPlugin from 'rollup-plugin-commonjs'
-import rebasePlugin from 'rollup-plugin-rebase'
 import jsonPlugin from 'rollup-plugin-json'
 import scss from 'rollup-plugin-scss'
 
@@ -27,10 +26,6 @@ export default {
     scss({
       output: './dist/bundle.css',
     }),
-    // rebasePlugin({
-    //   exclude: '*.scss',
-    //   verbose: true,
-    // }),
     resolvePlugin({
       extensions,
     }),
