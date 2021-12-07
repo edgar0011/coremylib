@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/edgar0011/coremylib"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepare": "husky install",
     "prepublish": "yarn clean && yarn build:lib",
@@ -116,7 +119,9 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|css|pdf)$": "<rootDir>/test/file-mock.js",
       "react-spring/renderprops": "<rootDir>/node_modules/react-spring/renderprops.cjs",
-      "react-spring": "<rootDir>/node_modules/react-spring/web.cjs"
+      "react-spring": "<rootDir>/node_modules/react-spring/web.cjs",
+        "^lodash-es$": "lodash",
+        "^lodash-es/(.*)": "lodash/$1"
     },
     "verbose": true,
     "transform": {
